@@ -20,7 +20,7 @@ const MuiIconButton = styled(IconButton)({
 export default function DefaultToolbar(props) {
   return (
     <Box sx={{ flexGrow: 1,}} >
-      <AppBar position="fixed" elevation={0}>
+      <AppBar position="static" elevation={0}>
         <Toolbar>
           <Box sx={{ flexGrow: 1, paddingLeft: {md: "2rem", xs: ""}}}>
            <Link href="/">
@@ -30,7 +30,7 @@ export default function DefaultToolbar(props) {
           {/* <Stack sx={{ flexGrow: 0.1, height: "23px", width:"2px", color: "rgb(139, 139, 138)" }}></Stack> */}
           {/* <Divider variant="middle" sx={{ height: "23px", width:"10px", color: "white" }} orientation="vertical" /> */}
           <MuiIconButton
-            size="medium"
+            size="small"
             edge="start"
             color="#023047"
             aria-label="menu"

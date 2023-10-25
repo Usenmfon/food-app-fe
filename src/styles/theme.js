@@ -27,6 +27,7 @@ let theme = {
             light: '#ffa726',
             main: '#f57c00',
             dark: '#ef6c00',
+            blue: '#023047',
             contrastText: 'rgba(0, 0, 0, 0.87)',
         },
         

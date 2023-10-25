@@ -5,19 +5,13 @@ import { styled, } from '@mui/material/styles';
 import { Drawer, Box, ListItemIcon } from '@mui/material';
 import Link from 'next/link'
 import CloseIcon from '@mui/icons-material/Close';
-import Image from 'next/image'
+// import Image from 'next/image'
 
 const routes = [
-  { path: '/about', title: 'About Us' },
-  { path: '/services', title: 'Services' },
-  { path: '/websites', title: 'Websites' },
-  { path: '/products', title: 'Products' },
-  { path: '/modelling', title: 'Modelling' },
-  { path: '/strategy', title: 'Strategy' },
-  { path: '/branding', title: 'Branding' },
-  { path: '/digitalart', title: 'Digital Arts & NFTs' },
-  { path: '#contact', title: 'Contact Us' },
-  // { path: '/', title: 'Blog' },
+  { path: '/register', title: 'Create an Account' },
+  { path: '/otp', title: 'Confirm OTP' },
+  { path: '/delivery', title: 'Delivery Information' },
+  { path: '/order', title: 'Order Information' },
 ]
 
 const MuiListItem = styled(ListItem)({
@@ -36,7 +30,7 @@ function DisplayDrawer({close}) {
           <Link passHref href='/' alt="futurelabs_logo">
             <ListItem>
               <ListItemIcon> 
-              <Image src='/images/futurelabs_icon.png' height="25" width="25" alt="futurelabs_logo" />
+              {/* <Image src='/images/' height="25" width="25" alt="futurelabs_logo" /> */}
               </ListItemIcon>
             </ListItem>
           </Link>
