@@ -4,6 +4,7 @@ import { Grid, Typography } from "@mui/material";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import MenuTabs from "../../../components/tabs"
+import VendorName from "../../../components/vendor"
 import Link from "next/link";
 
 export default function Vendor(){
@@ -28,15 +29,6 @@ export default function Vendor(){
                 </Grid>
             </Grid>
         </DefaultLayout>
-    )
-}
-
-function VendorName({ names, id }){
-    let name = names.filter((item) => item.id == id)
-    return (
-        <>
-            {name[0].title}
-        </>
     )
 }
 
