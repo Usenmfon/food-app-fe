@@ -29,7 +29,7 @@ export default function Home() {
                   <MuiTypography variant="h2" color="custom.blue" >Delicious Meals From Your <br/>
                     Favourite Vendors
                   </MuiTypography>
-                  <Typography variant="subtitle1" color="custom.blue">Order Delicious Meals From Your Favourite  Vendors</Typography>
+                  <Typography variant="body1" color="custom.blue">Order Delicious Meals From Your Favourite  Vendors</Typography>
                 </Grid>
                 <Grid item md={12} xs={12} textAlign="center">
                   <Button variant="contained" sx={{ width: {md: '35vw', xs: '70vw'}, color: "white" }}>Place an order</Button>

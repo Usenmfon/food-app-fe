@@ -52,7 +52,7 @@ export default function Delivery(){
                         >
                           <MenuItem value={10}>Ikot Ekpene</MenuItem>
                         </Select>
-                        <Typography>{`Can't find yout street? Select a street close to yours`}</Typography>
+                        <Typography>{`Can't find your street? Select a street close to yours`}</Typography>
                     </Stack>
                     <Stack sx={{ textAlign: 'left', marginBottom: '1.5rem', width: {md: '50vw', xs: '80vw'}  }}>
                         <InputLabel htmlFor="address" sx={{ fontWeight: 700, fontSize: "18px",}}>Delivery Address</InputLabel>
