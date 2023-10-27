@@ -6,10 +6,10 @@ function VendorMap({ vendors }) {
   const rows = [];
   vendors.forEach((item, index) => {
     rows.push(
-      <Grid key={index} item md={3} xs={6}>
+      <Grid key={index} item md={3} sm={6} xs={6} >
         <Link href={item.url}>
             <figure>
-              <Image src={item.img} width="200" height="200" alt="avatar" />
+              <Image src={item.img} layout="responsive" width="150" height="150" alt="avatar" />
               <figcaption style={{ fontWeight: 700 }}>{item.name}</figcaption>
             </figure>
         </Link>
@@ -17,7 +17,7 @@ function VendorMap({ vendors }) {
     );
   });
   return (
-    <Grid container marginTop="2rem">
+    <Grid container columnSpacing={1} marginTop="2rem">
       {rows}
     </Grid>
   );
@@ -25,7 +25,7 @@ function VendorMap({ vendors }) {
 
 export default function VendorList() {
   return (
-    <Box padding="4rem" sx={{ background: "#FAF8F5" }}>
+    <Box paddingTop="4rem" paddingX="1.5rem" sx={{ background: "#FAF8F5"}}>
       <Typography variant="large" color="custom.blue" sx={{ fontWeight: 900 }}>
         Your Favourite Vendors
       </Typography>
